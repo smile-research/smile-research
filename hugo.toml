@@ -1,0 +1,36 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+defaultContentLanguage = 'en-us'
+title = 'SMILE'
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
+
+# Default config
+[params.breadcrumbs]
+enabled = false
+showCurrentPage = true
+home = "Home"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/user"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "news"
+url = "/news"
+
+[[params.menu]]
+name = "papers"
+url = "/papers"
+
+[[params.menu]]
+name = "about"
+url = "/about"
