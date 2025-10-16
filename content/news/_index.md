@@ -1,6 +1,4 @@
 +++
-title = 'news'
+title = 'News'
 draft = false
 +++
-
-These are news
