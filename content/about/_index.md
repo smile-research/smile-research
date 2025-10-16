@@ -11,7 +11,7 @@ SMILE is a machine learning research group at Silesian University of Technology.
 
 ## Group Head
 
-![Jakub Nalepa](/images/jakub-nalepa.jpg)
+<img src="/images/jakub-nalepa.jpg" alt="Jakub Nalepa" style="float: right; margin-left: 20px; margin-bottom: 20px; max-width: 300px; border-radius: 8px;">
 
 **Jakub Robert Nalepa, D.Sc.**
 
