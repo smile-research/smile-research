@@ -7,6 +7,8 @@ draft = false
 
 SMILE is a machine learning research group at Silesian University of Technology. Our research focuses on machine learning, evolutionary algorithms, deep learning, and the analysis of medical and satellite imagery.
 
+---
+
 ## Group Head
 
 ![Jakub Nalepa](/images/jakub-nalepa.jpg)
