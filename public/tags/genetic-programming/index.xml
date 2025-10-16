@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Papers on SMILE</title>
-    <link>https://smile-research.com/papers/</link>
-    <description>Recent content in Papers on SMILE</description>
+    <title>Genetic Programming on SMILE</title>
+    <link>https://smile-research.com/tags/genetic-programming/</link>
+    <description>Recent content in Genetic Programming on SMILE</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://smile-research.com/papers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://smile-research.com/tags/genetic-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giraffe: A Genetic Programming Algorithm To Build Deep Learning Ensembles For Ecg Arrhythmia Classification</title>
       <link>https://smile-research.com/papers/giraffe/</link>

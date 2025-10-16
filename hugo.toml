@@ -1,36 +1,67 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://smile-research.com/'
 languageCode = 'en-us'
-defaultContentLanguage = 'en-us'
-title = 'SMILE'
+theme = 'dk-hugo-theme'
+title = "SMILE"
 
-[module]
-[module.hugoVersion]
-extended = false
-min = "0.116.0"
+# Configure output formats
+[outputs]
+home = ["HTML", "RSS", "searchindex"]
 
-# Default config
-[params.breadcrumbs]
-enabled = false
-showCurrentPage = true
-home = "Home"
+[outputFormats.searchindex]
+baseName = "searchindex"
+mediaType = "application/json"
+isPlainText = true
 
-[[params.social]]
-name = "github"
-url = "https://github.com/user"
+# Disable built-in syntax highlighting (using highlight.js instead)
+[markup]
+[markup.highlight]
+codeFences = false
+noClasses = false
 
-# Main menu pages
-[[params.menu]]
-name = "home"
+# Enable LaTeX support
+[markup.goldmark.renderer]
+unsafe = true
+
+# Configure table of contents
+[markup.tableOfContents]
+endLevel = 3
+ordered = false
+startLevel = 2
+
+# Configure menu
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
 url = "/"
+weight = 1
 
-[[params.menu]]
-name = "news"
-url = "/news"
+[[menu.main]]
+identifier = "news"
+name = "News"
+url = "/news/"
+weight = 2
 
-[[params.menu]]
-name = "papers"
-url = "/papers"
+[[menu.main]]
+identifier = "papers"
+name = "Papers"
+url = "/papers/"
+weight = 3
 
-[[params.menu]]
-name = "about"
-url = "/about"
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 4
+
+# Configure taxonomies
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# Parameters for theme
+[params]
+author = "SMILE Research Group"
+description = "SMILE research group from Silesian University of Technology"
+email = "contact@smile-research.com"
+github = "https://github.com/smile-research"

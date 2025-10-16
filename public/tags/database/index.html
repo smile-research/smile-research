@@ -1,181 +1,137 @@
 <!DOCTYPE html>
-<html lang="en-us"
-  dir="ltr">
-
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en-us" dir="ltr">
+<head>
   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Database | SMILE</title>
+<meta name="description" content="SMILE research group from Silesian University of Technology">
+
+
+<script>
+  
+  const getTheme = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  };
+  
+  
+  const theme = getTheme();
+  document.documentElement.setAttribute('data-theme', theme);
+</script>
 
 
 
-<link rel="icon" type="image/ico" href="http://localhost:1313//favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313//favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313//favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313//android-chrome-192x192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313//apple-touch-icon.png">
-
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/database/index.xml" title="SMILE">
-<meta name="description" content=""/>
+      <link rel="stylesheet" href="/css/main.min.2ac3a510903f67ef5d2898aefd704216acf37cbab0dd90b4bae12835b10ac17b.css" integrity="sha256-KsOlEJA/Z&#43;9dKJiu/XBCFqzzfLqw3ZC0uuEoNbEKwXs=" crossorigin="anonymous">
 
 
 
-<title>
-    
-    Database | SMILE
-    
-</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" id="light-syntax-theme">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" id="dark-syntax-theme" disabled>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
-<link rel="canonical" href="http://localhost:1313/tags/database/"/>
 
-<meta property="og:url" content="http://localhost:1313/tags/database/">
-  <meta property="og:site_name" content="SMILE">
-  <meta property="og:title" content="Database">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
 
 
 
-
-
-
-
-
-<link rel="stylesheet" href="/assets/combined.min.bd84ca6b544328df3aee8e5725e3be7cf33ffdbc5623a65d22925ebff6706737.css" media="all">
-
-
-
+        <script src="/js/main.ab0cd25189ba8fdd46618181b297a0b83abdb41a1c550c5fb6850e0930ec37ce.js" integrity="sha256-qwzSUYm6j91GYYGBspeguDq9tBocVQxftoUOCTDsN84=" crossorigin="anonymous"></script>
+        <script src="/js/search.68654f631af4426a91b81ae18ad51a967bb8e084220f493bb8fa6e99be3f25d5.js" integrity="sha256-aGVPYxr0QmqRuBrhitUalnu44IQiD0k7uPpumb4/JdU=" crossorigin="anonymous"></script>
 
 
 </head>
-
-
-
-
-
-<body class="auto">
-
-  <div class="content">
-    <header>
-      
-
-<div class="header">
-
-    
-
-    <h1 class="header-title">
-        <a href="http://localhost:1313/">SMILE</a>
-    </h1>
-
-    <div class="flex">
-        
-
-        
-        
-      
-        <p class="small ">
-            <a href="/" >
-                /home
-            </a>
-        </p>
-        
-      
-        <p class="small ">
-            <a href="/news" >
-                /news
-            </a>
-        </p>
-        
-      
-        <p class="small ">
-            <a href="/papers" >
-                /papers
-            </a>
-        </p>
-        
-      
-        <p class="small ">
-            <a href="/about" >
-                /about
-            </a>
-        </p>
-        
-        
+<body>
+  <header>
+    <div class="header-container">
+  <h1>SMILE</h1>
+  <div class="header-right">
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search...">
+      <div id="search-results" class="search-results"></div>
     </div>
-
-    
-
+    <button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-toggle-icon sun">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-toggle-icon moon">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+  </div>
 </div>
 
-    </header>
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/news/">News</a>
+    </li>
+    <li>
+      <a href="/papers/">Papers</a>
+    </li>
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    </ul>
+  </nav>
 
-    <main class="main">
-      
 
-<div class="list-container">
-
+  </header>
+  <main>
     
-
-    <h1>Database</h1>
+  <div class="tag-header">
+    <h1>Tag: Database</h1>
+    <a href="/tags/" class="all-tags-link">View all tags</a>
+  </div>
+  
+  <div class="post-list">
     
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-    <div class="post-line">
-
-    
-    
-
-    <p class="line-date">12 Nov 2023 </p>
-
-    <div>
-        <p class="line-title">
-            <a href="/papers/article1/">
-                Log-Structured Merge Tree
-            </a>
-        </p>
-
+      <article class="post-item">
+        <h2 class="post-title"><a href="/papers/article1/">Log-Structured Merge Tree</a></h2>
+        <div class="post-meta">
+          <time datetime="2023-11-12T00:00:00Z">
+            November 12, 2023
+          </time>
+          
+            <span class="post-tags">
+              
+                <a href="/tags/database/" class="post-tag">#database</a>
+              
+                <a href="/tags/java/" class="post-tag">#java</a>
+              
+            </span>
+          
+        </div>
         
-    </div>
-</div>
+          <div class="post-description">An LSM Tree overview and Java implementation.</div>
+        
+      </article>
     
-
-    
-
-    
-
-</div>
-
-    </main>
   </div>
 
+  </main>
   <footer>
-    
-
-    
-    <p>Powered by
-        <a href="https://gohugo.io/">Hugo</a>
-        and
-        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
-    </p>
-    
-    
-    
-
+    <div class="footer-container">
+  <p>&copy; 2025 SMILE Research Group. All rights reserved.</p>
+  <p>Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a></p>
+</div>
 
   </footer>
-
-  
-
 </body>
-
-<script src="/js/theme-switch.js"></script>
-<script defer src="/js/copy-code.js"></script>
 </html>

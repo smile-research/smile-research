@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on SMILE</title>
-    <link>http://localhost:1313/</link>
+    <link>https://smile-research.com/</link>
     <description>Recent content in Home on SMILE</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://smile-research.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Log-Structured Merge Tree</title>
-      <link>http://localhost:1313/papers/article1/</link>
-      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/article1/</guid>
-      <description>An LSM Tree overview and Java implementation.</description>
+      <title>Giraffe: A Genetic Programming Algorithm To Build Deep Learning Ensembles For Ecg Arrhythmia Classification</title>
+      <link>https://smile-research.com/papers/giraffe/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://smile-research.com/papers/giraffe/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Cardiovascular diseases remain one of the leading causes of death worldwide. Therefore, developing and validating automated tools to help identify high-risk patients are of paramount clinical utility. In this article, we tackle this task and introduce a genetic programming algorithm (called GIRAFFE) to build (deep) machine learning classification ensembles for arrhythmia classification from two-dimensional images of 12-lead electrocardiogram (ECG) tracings. GIRAFFE evolves the architecture, content, and fusion scheme of the ensemble, to obtain an accurate yet lightweight classification system. The experimental study performed over a large-scale dataset of ECG images revealed that our approach outperforms other ensemble methods and carefully fine-tuned deep models, elaborates compact heterogeneous ensembles, and does not require any user intervention hence it is easy to apply to other classification tasks.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
