@@ -88,3 +88,4 @@ hugo --quiet
 - Tags create automatic tag pages
 - All markdown syntax supported
 - Math/LaTeX supported via `$$...$$` or `$...$`
+- Syntax highlighting available with code blocks: ` ```python ` or ` ```bash `
