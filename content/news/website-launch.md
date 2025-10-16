@@ -1,6 +1,6 @@
 ---
 title: "SMILE Research Group Website Launch"
-date: 2024-10-16
+date: 2025-10-16
 draft: false
 tags: ["announcement"]
 ---
