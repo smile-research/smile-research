@@ -1,5 +1,9 @@
 # SMILE Website - Content Management Guide
 
+## About This Site
+
+Built with [Hugo](https://gohugo.io/) using [dk-hugo-theme](https://github.com/damiankucharski/dk-hugo-theme).
+
 ## Quick Start
 
 All content is in markdown files under `content/`. After editing, commit and push to `main` - GitHub Actions will build and deploy automatically.

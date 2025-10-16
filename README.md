@@ -1,45 +1,15 @@
-![banner](https://raw.githubusercontent.com/tomfran/typo/main/images/banner-light.webp)
+# SMILE Research Group Website
 
-# Typo, a Hugo theme.
+Official website for the SMILE research group at Silesian University of Technology.
 
-Typo is a theme backed by simplicity, as you can see in the screenshots below. The goal was to have a website centered around content and nothing more.
+## About
 
-[![wiki](https://img.shields.io/badge/doc-wiki-orange)](https://tomfran.github.io/typo-wiki/)
-[![hugo-typo](https://img.shields.io/badge/hugo_themes-@typo-red)](https://themes.gohugo.io/themes/typo/)
-[![GitHub Release](https://img.shields.io/github/v/release/tomfran/typo)](https://github.com/tomfran/typo/releases/latest)
-[![last-commit](https://img.shields.io/github/last-commit/tomfran/typo)](https://github.com/tomfran/typo/commits/)
+SMILE is a machine learning research group working primarily with medical data and remote sensing applications.
 
-**Homepage**
+**Group Head:** Jakub Nalepa, D.Sc.  
+**Contact:** jakub.nalepa@polsl.pl  
+**Institution:** Silesian University of Technology
 
-![1](https://raw.githubusercontent.com/tomfran/typo/main/images/1.webp)
+## Website
 
-**Article**
-
-![2](https://raw.githubusercontent.com/tomfran/typo/main/images/2.webp)
-
-![3](https://raw.githubusercontent.com/tomfran/typo/main/images/3.webp)
-
-## 1 Wiki
-
-Typo's [Wiki](https://tomfran.github.io/typo-wiki/) is the place to find instructions on how to [setup](https://tomfran.github.io/typo-wiki/setup) the theme and an overview of the available [features](https://tomfran.github.io/typo-wiki/features). 
-
-Some of the most relevant are: heading auto-numbering, dark mode, color palettes, dark and light images, comments, etc.
-
-## 2 Support
-
-If you use the theme or found it useful you can support me by leaving a star ⭐ to Typo's Github repository.
-
-[Contributions](https://github.com/tomfran/typo/blob/main/CONTRIBUTING.md) are always welcome, feel free to open issues and PRs with fixes or new features.
-
-## 3 Typo Users
-
-If you're using Typo for your website, feel free to add your website to [the list](https://github.com/tomfran/typo/blob/main/USERS.md) alongside what you do! 😊
-
-## 4 Questions or ideas? 
-
-Use the [discussion tab](https://github.com/tomfran/typo/discussions) to share ideas/tips/questions about Typo or Hugo in general!
-
-## 5 References
-
-The SVGs for social icons are taken from [Simple Icons](https://github.com/simple-icons/simple-icons).
-Every SVG present on the website is usable on the theme.
+Visit us at: [https://smile-research.com/](https://smile-research.com/)
